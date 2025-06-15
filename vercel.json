@@ -1,109 +1,19 @@
 {
+    "$schema": "https://openapi.vercel.sh/vercel.json",
     "version": 2,
-    "builds": [
-        {
-            "src": "./index.js",
-            "use": "@vercel/node"
-        }
-    ],
-
-    "routes":[
-        {
-            "src": "/(.*)",
-            "dest": "/"
-        },
-        {
-            "src": "/restapi/ai/gpt3.js",
-            "dest": "/api/ai/gpt3"
-        },
-        {
-            "src": "/restapi/game/asahotak.js",
-            "dest": "/api/game/asahotak"
-        },
-        {
-            "src": "/restapi/game/caklontong.js",
-            "dest": "/api/game/caklontong"
-        },
-        {
-            "src": "/restapi/game/family100.js",
-            "dest": "/api/game/family100"
-        },
-        {
-            "src": "/restapi/game/lengkapikalimat.js",
-            "dest": "/api/game/lengkapikalimat"
-        },
-        {
-            "src": "/restapi/game/siapakahaku.js",
-            "dest": "/api/game/siapakahaku"
-        },
-        {
-            "src": "/restapi/game/susunkata.js",
-            "dest": "/api/game/susunkata"
-        },
-        {
-            "src": "/restapi/game/tebakbendera.js",
-            "dest": "/api/game/tebakbendera"
-        },
-        {
-            "src": "/restapi/game/tebakgabut.js",
-            "dest": "/api/game/tebakgabut"
-        },
-        {
-            "src": "/restapi/game/tebakgambar.js",
-            "dest": "/api/game/tebakgambar"
-        },
-        {
-            "src": "/restapi/game/tebakgame.js",
-            "dest": "/api/game/tebakgame"
-        },
-        {
-            "src": "/restapi/game/tebakheroml.js",
-            "dest": "/api/game/tebakheroml"
-        },
-        {
-            "src": "/restapi/game/tebakkabupaten.js",
-            "dest": "/api/game/tebakkabupaten"
-        },
-        {
-            "src": "/restapi/game/tebakkalimat.js",
-            "dest": "/api/game/tebakkalimat"
-        },
-        {
-            "src": "/restapi/game/tebakkata.js",
-            "dest": "/api/game/tebakkata"
-        },
-        {
-            "src": "/restapi/game/tebakkimia.js",
-            "dest": "/api/game/tebakkimia"
-        },
-        {
-            "src": "/restapi/game/tebakkpop.js",
-            "dest": "/api/game/tebakkpop"
-        },
-        {
-            "src": "/restapi/game/tebaklagu.js",
-            "dest": "/api/game/tebaklagu"
-        },
-        {
-            "src": "/restapi/game/tebaklirik.js",
-            "dest": "/api/game/tebaklirik"
-        },
-        {
-            "src": "/restapi/game/tebaklogo.js",
-            "dest": "/api/game/tebaklogo"
-        },
-        {
-            "src": "/restapi/game/tebaklucu.js",
-            "dest": "/api/game/tebaklucu"
-        },
-        {
-            "src": "/restapi/game/tebaktebakan.js",
-            "dest": "/api/game/tebaktebakan"
-        },
-        {
-            "src": "/restapi/game/tekateki.js",
-            "dest": "/api/game/tekateki"
-        }
+    "cleanUrls": true,
+    "rewrites": [
+      {
+        "source": "/(.*)",           
+        "destination": "/public/index.html"
+      },
+      {
+        "source": "/api/(.*)",            
+        "destination": "/api/index.html"
+      },
+      {
+        "source": "/api/game/asahotak",    
+        "destination": "/restapi/game/asahotak.js"
+      }
     ]
-}
-
+  }
