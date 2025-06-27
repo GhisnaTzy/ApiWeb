@@ -1,4 +1,4 @@
-[
+const data = [
   {
     "index": 0,
     "img": "https://www.cademedia.com/wp-content/uploads/2020/12/tebak-gambar-level-1-nomor-1.jpg",
@@ -5999,4 +5999,14 @@
     "jawaban": "OLAHRAGA SELANCAR BERAKSI MELAWAN GULUNGAN OMBAK",
     "deskripsi": "Gambar bola, huruf H, raja, setan, dan mobil (dalam bahasa Inggris).Gambar becak, huruf SI, pel, dan awan.Gambar guling, huruf AN, dan ombak."
   }
-]
+];
+
+
+exports.handler = async () => {
+  const random = data[Math.floor(Math.random() * data.length)];
+  return {
+    statusCode: 200,
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(random, null, 2),
+  };
+};
