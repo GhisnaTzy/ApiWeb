@@ -990,6 +990,9 @@ tr:hover {
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 320px) {
+  .left {
+    font-size: 12px;
+  }
   .nav__menu {
     padding: 1rem 1.5rem;
   }
@@ -1023,7 +1026,7 @@ tr:hover {
     font-size: var(--smaller-font-size);
   }
   .table {
-    width: 300px;       
+    width: 200px;       
   }
   .services__container {
     grid-template-columns: 145px;
@@ -1040,22 +1043,59 @@ tr:hover {
 }
 
 
+@media screen and (min-width: 320px) {
+  .left {
+    font-size: 12px;
+  }
+
+  td {
+    font-size: 12px;
+  }
+
+  th {
+    font-size: 14px;
+  }
+
+  .table {
+    width: 200px;       
+  }
+}
 
 @media screen and (min-width: 435px) {
+  .left {
+    font-size: 12px;
+  }
+  td {
+    font-size: 12px;
+  }
+
+  th {
+    font-size: 14px;
+  }
   .work__container {
     justify-content: center;
     grid-template-columns: repeat(2, max-content);
   }
-
   .work__img {
     width: 165px;
   }
   .table {
-    width: 400px;       
+    width: 350px;    
   }
+
 }
 
 @media screen and (min-width: 535px) {
+  .left {
+    font-size: 14px;
+  }
+  td {
+    font-size: 14px;
+  }
+
+  th {
+    font-size: 16px;
+  }
   .table {
     width: 450px;       
   }
@@ -1064,6 +1104,16 @@ tr:hover {
 
 /* For medium devices */
 @media screen and (min-width: 630px) {
+  .left {
+    font-size: 16px;
+  }
+  td {
+    font-size: 16px;
+  }
+
+  th {
+    font-size: 18px;
+  }
   .nav__menu {
     width: 328px;
     left: 0;
@@ -1161,6 +1211,7 @@ tr:hover {
 }
 
 @media screen and (min-width: 767px) {
+  
   .work__container {
     grid-template-columns: repeat(2, max-content);
   } 

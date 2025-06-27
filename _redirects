@@ -1,2 +1,31 @@
 /api  /indexmenu  200
-/api/game/tebakgambar  /.netlify/functions/tebak-gambar  200
+
+/api/ai/blackbox  /.netlify/functions/ai-blackbox  200
+/api/ai/deepseek  /.netlify/functions/ai-deepseek  200
+/api/ai/gemini  /.netlify/functions/ai-gemini  200
+/api/ai/gpt3  /.netlify/functions/ai-gpt3  200
+/api/ai/llama  /.netlify/functions/ai-llama  200
+/api/ai/xizone  /.netlify/functions/ai-xizone  200
+
+/api/game/asahotak        /.netlify/functions/game-asahotak        200
+/api/game/caklontong      /.netlify/functions/game-caklontong      200
+/api/game/family100       /.netlify/functions/game-family100       200
+/api/game/lengkapikalimat /.netlify/functions/game-lengkapikalimat 200
+/api/game/siapakahaku     /.netlify/functions/game-siapakahaku     200
+/api/game/susunkata       /.netlify/functions/game-susunkata       200
+/api/game/tebakbendera    /.netlify/functions/game-tebakbendera    200
+/api/game/tebakgabut      /.netlify/functions/game-tebakgabut      200
+/api/game/tebakgambar     /.netlify/functions/game-tebakgambar     200
+/api/game/tebakgame       /.netlify/functions/game-tebakgame       200
+/api/game/tebakheroml     /.netlify/functions/game-tebakheroml     200
+/api/game/tebakkabupaten  /.netlify/functions/game-tebakkabupaten  200
+/api/game/tebakkalimat    /.netlify/functions/game-tebakkalimat    200
+/api/game/tebakkata       /.netlify/functions/game-tebakkata       200
+/api/game/tebakkimia      /.netlify/functions/game-tebakkimia      200
+/api/game/tebakkpop       /.netlify/functions/game-tebakkpop       200
+/api/game/tebaklagu       /.netlify/functions/game-tebaklagu       200
+/api/game/tebaklirik      /.netlify/functions/game-tebaklirik      200
+/api/game/tebaklogo       /.netlify/functions/game-tebaklogo       200
+/api/game/tebaklucu       /.netlify/functions/game-tebaklucu       200
+/api/game/tebaktebakan    /.netlify/functions/game-tebaktebakan    200
+/api/game/tekateki        /.netlify/functions/game-tekateki        200
